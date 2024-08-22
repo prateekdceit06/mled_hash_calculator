@@ -58,7 +58,7 @@ int main(int argc, char* argv[]) {
     try {
         std::string filename = argv[1];
         std::string fileHash = calculateSHA256(filename);
-        std::cout << "SHA-256 Hash of " << filename << ": " << fileHash << std::endl;
+        std::cout << fileHash << std::endl;
     } catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;
         return 1;
